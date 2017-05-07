@@ -3,7 +3,7 @@ layout: post
 title:  "对这个 jekyll 博客主题的改版和重构"
 date:   2017-05-08 01:50:18 +0800
 categories: jekyll
-tags: jekyll 端口 markdown Foxit RubyGems HTML CSS
+tags: 
 author: lhlloveqq
 ---
 
