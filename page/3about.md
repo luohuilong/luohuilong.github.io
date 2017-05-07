@@ -6,7 +6,7 @@ icon: heart
 type: page
 ---
 
-- 这是搭建在码云上的个人博客，感谢他们。
+- 这是搭建在github上的个人博客，感谢他们。
 - 如果你认为有侵权的地方请联系我删除。
 - QQ: 8527949  
 - Email: luohuilong@msn.com
