@@ -6,24 +6,24 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: 熟悉的陌生人
+title: 备忘记录
 brief-intro: 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://luohuilong.github.io" # the base hostname & protocol for your site
+url: "https://lhlloveqq.oschina.io" # the base hostname & protocol for your site
 
 permalink: /:year/:month/:day/:title/
 
 # other links
 twitter_username: 
 facebook_username: 
-github_username:  
-email: 
-weibo_username: 
+github_username: luohuilong
+email: luohuilong@qq.com
+weibo_username: altshiftctrl
 zhihu_username: 
 linkedIn_username: 
 dribbble_username:
 
-description_footer: 
+description_footer: 人比海里沙 毋用多牵挂└(^o^)┘
 
 # comments
 # two ways to comment, only choose one, and use your own short name
