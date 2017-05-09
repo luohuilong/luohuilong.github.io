@@ -15,7 +15,7 @@
   var demoContent = [
     {
       demo_link: 'http://xiuno.com/',
-      img_link: 'https://git.oschina.net/lhlloveqq/lhlloveqq/raw/master/images/xiunobbs.png',
+      img_link: 'http://www.fork.pub/images/xiunobbs.png',
       code_link: 'http://git.oschina.net/xiuno/xiunobbs',
       title: 'Xiuno BBS',
       core_tech: 'PHP',
