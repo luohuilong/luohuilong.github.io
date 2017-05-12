@@ -20,6 +20,18 @@
       title: 'Xiuno BBS',
       core_tech: 'PHP',
       description: '探索永无止境 XIUNOBBS 4.0 即将到来'
+    },{
+      demo_link: 'https://cn.wordpress.org/',
+      img_link: 'https://luohuilong.github.io/images/wordpress.jpg',
+      title: 'WordPress',
+      core_tech: 'PHP',
+      description: 'WordPress是一个注重美学、易用性和网络标准的个人信息发布平台，WordPress虽为免费的开源软件。'
+    },{
+      demo_link: 'http://jekyll.com.cn/',
+      img_link: 'https://luohuilong.github.io/images/jekyll.png',
+      title: 'Jekyll',
+      core_tech: 'Ruby',
+      description: '将纯文本转化为静态网站和博客，无需数据库、评论功能，不需要不断的更新版本——只用关心你的博客内容。'
     }
   ];
 
