@@ -9,7 +9,7 @@
 title: 备忘记录
 brief-intro: 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://lhlloveqq.oschina.io" # the base hostname & protocol for your site
+url: "https://www.dzpk.pub" # the base hostname & protocol for your site
 
 permalink: /:year/:month/:day/:title/
 
