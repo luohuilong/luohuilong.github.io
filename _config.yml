@@ -6,10 +6,10 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: 备忘记录
+title: 读徒Public
 brief-intro: 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://dzpk.pub" # the base hostname & protocol for your site
+url: "https://luohuilong.github.io/" # the base hostname & protocol for your site
 
 permalink: /:year/:month/:day/:title/
 
@@ -23,7 +23,7 @@ zhihu_username:
 linkedIn_username: 
 dribbble_username:
 
-description_footer: 人比海里沙 毋用多牵挂└(^o^)┘
+description_footer: 人比海里沙,毋用多牵挂└(^o^)┘
 
 # comments
 # two ways to comment, only choose one, and use your own short name
