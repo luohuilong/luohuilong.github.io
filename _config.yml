@@ -6,8 +6,8 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: 读徒Public
-brief-intro: 
+title: 得知品客
+brief-intro: 命里有时终须有，命里无时莫强求
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://luohuilong.github.io/" # the base hostname & protocol for your site
 
