@@ -3,7 +3,7 @@ layout: post
 title:  "ubuntu安装phpstudy和一些优化设置"
 date:   2017-05-11 05:56:18 +0800
 categories: 学习摘要
-tags: Apache phpstudy ubuntu
+tags: phpstudy ubuntu
 author: lhlloveqq
 excerpt: phpstudy设置非常简单的一款集成web应用，一般在windows下常见人使用，这是介绍在ubuntu下的安装及配置
 ---
