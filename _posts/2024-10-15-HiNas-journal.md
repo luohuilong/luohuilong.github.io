@@ -1,12 +1,13 @@
-﻿---
+---
 layout: post
 title:  "journal日志清理"
 date:   2024-10-15 15:07:18 +0800
 categories: 学习摘要
 tags: HiNas
 author: lhlloveqq
-excerpt:
+excerpt: 
 ---
+
  * content
 {:toc}
 
