@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title:  "Cloudreve3.5.3 armv7版本 适用hi3798mv100 "
+title:  "Cloudreve3.5.3 armv7版本 适用hi3798mv100"
 date:   2024-10-15 15:07:18 +0800
 categories: 学习摘要
 tags: HiNas
