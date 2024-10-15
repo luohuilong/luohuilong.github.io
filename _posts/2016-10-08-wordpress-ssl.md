@@ -3,7 +3,7 @@ layout: post
 title:  "Apache+WordPress部署SSL加密服务，全站开启https访问 "
 date:   2016-10-08 08:07:18 +0800
 categories: 学习摘要
-tags: Apache PHP Wordpress
+tags: Wordpress
 author: lhlloveqq
 excerpt: 国际著名Wordpress博客程序开启ssl的设置，重定向，后台强制https，不修改数据库设置站内链接支持ssl
 ---
