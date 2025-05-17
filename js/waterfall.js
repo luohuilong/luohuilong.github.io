@@ -38,6 +38,12 @@
       title: 'Cloudreve',
       core_tech: 'go',
       description: '在 Web 端，Cloudreve 提供了强大的文件管理及上传组件，通过拖拽管理文件；多选、范围选择批量操作文件，对文件进行分享、移动、复制、压缩等操作。'
+    },{
+      demo_link: 'https://kohgylw.github.io/',
+      img_link: 'https://www.dzpk.pub/images/icon-big.png',
+      title: 'Kiftd',
+      core_tech: 'JavaScript',
+      description: '一款面向个人、团队、小型组织的网盘应用系统，免费、开源、完善。'
     }
   ];
 
