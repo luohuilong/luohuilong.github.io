@@ -32,6 +32,12 @@
       title: 'Jekyll',
       core_tech: 'Ruby',
       description: '将纯文本转化为静态网站和博客，无需数据库、评论功能，不需要不断的更新版本——只用关心你的博客内容。'
+    },{
+      demo_link: 'https://cloudreve.org/',
+      img_link: 'https://www.dzpk.pub/images/logo192.png',
+      title: 'Cloudreve',
+      core_tech: 'go',
+      description: '在 Web 端，Cloudreve 提供了强大的文件管理及上传组件，通过拖拽管理文件；多选、范围选择批量操作文件，对文件进行分享、移动、复制、压缩等操作。'
     }
   ];
 
