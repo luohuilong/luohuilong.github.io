@@ -19,7 +19,7 @@
       code_link: 'http://git.oschina.net/xiuno/xiunobbs',
       title: 'Xiuno BBS',
       core_tech: 'PHP',
-      description: '探索永无止境 XIUNOBBS 4.0 即将到来'
+      description: 'Xiuno BBS 4.0 是 2016 年诞生的，国产、小巧、精悍、采用PHP开发的论坛程序'
     },{
       demo_link: 'https://cn.wordpress.org/',
       img_link: 'https://www.dzpk.pub/images/wordpress.jpg',
