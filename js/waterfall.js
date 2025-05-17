@@ -14,7 +14,7 @@
      */
   var demoContent = [
     {
-      demo_link: 'http://bbs.xiuno.com/',
+      demo_link: 'https://www.xiunobbs.cn/',
       img_link: 'https://www.dzpk.pub/images/xiunobbs.png',
       code_link: 'http://git.oschina.net/xiuno/xiunobbs',
       title: 'Xiuno BBS',
