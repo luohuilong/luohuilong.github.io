@@ -43,7 +43,7 @@
       img_link: 'https://www.dzpk.pub/images/icon-big.png',
       title: 'Kiftd',
       core_tech: 'JavaScript',
-      description: '一款面向个人、团队、小型组织的网盘应用系统，免费、开源、完善。'
+      description: '一款面向个人、团队、小型组织的网盘应用系统，免费、开源、完善、操作简单。'
     }
   ];
 
