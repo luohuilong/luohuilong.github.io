@@ -16,14 +16,14 @@ permalink: /:year/:month/:day/:title/
 # other links
 twitter_username: 
 facebook_username: 
-github_username: #luohuilong
-email: #luohuilong@qq.com
+github_username: 
+email: 
 weibo_username: 
 zhihu_username: 
 linkedIn_username: 
 dribbble_username:
 
-#description_footer: 人比海里沙,毋用多牵挂└(^o^)┘
+description_footer: # 人比海里沙,毋用多牵挂└(^o^)┘
 
 # statistic analysis 统计代码
 # 百度统计 id，将统计代码替换为自己的百度统计id，即
