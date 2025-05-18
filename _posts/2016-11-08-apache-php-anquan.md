@@ -2,7 +2,7 @@
 layout: post
 title:  "Windows下配置安全的WebServer"
 date:   2016-11-08 08:07:18 +0800
-categories: 学习摘要
+categories: 互联网
 tags: Apache PHP
 author: lhlloveqq
 excerpt: apache+php的一种降低用户权限的做法同时也方便设置读写操作，目录关闭或开启写权限操作
@@ -180,6 +180,6 @@ httpd.exe为Apache HTTP服务器程序。直接执行程序可启动服务器的
 
 重启Apache服务。
 
-mysql安装后台服务
-
     mysqld.exe –instal
+
+mysql安装后台服务

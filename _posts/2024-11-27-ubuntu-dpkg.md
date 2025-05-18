@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "package architecture（arm） does not match system(armhf)"
+title:  "linux更换dpkg架构从armhf到arm"
 date:   2024-11-27 14:56:18 +0800
-categories: 学习摘要
-tags: ubuntu
+categories: 互联网
+tags: Linux
 author: lhlloveqq
 excerpt: 
 ---
@@ -21,7 +21,7 @@ excerpt:
 
 用下面命令显示系统的架构：
 
-sudo dpkg --print-architecture
+    sudo dpkg --print-architecture
 
 不同的系统可能显示的结果有：arm64， amd64，armhf……
 
@@ -29,12 +29,12 @@ sudo dpkg --print-architecture
 
 通过命令添加新的架构：
 
-sudo dpkg --add-architecture arm
+    sudo dpkg --add-architecture arm
 
 然后再尝试安装，顺利完成。。
 
 既然贴了添加，那就顺便把移除命令也放出来：
 
-sudo dpkg --remove-architecture arm
+    sudo dpkg --remove-architecture arm
 
 后续运行正常没有报错。

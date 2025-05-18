@@ -2,8 +2,8 @@
 layout: post
 title:  "让phpstudy支持https"
 date:   2017-04-08 08:07:18 +0800
-categories: 学习摘要
-tags: phpstudy SSL
+categories: 互联网
+tags: phpstudy
 author: lhlloveqq
 excerpt: phpstudy设置启用https的方法
 ---
@@ -23,7 +23,7 @@ excerpt: phpstudy设置启用https的方法
 
 打开conf目录下的vhosts文件并编辑一个网站属性这里列个例子：
 
-```
+```shell
 NameVirtualHost *:443
 
 <VirtualHost *:443>

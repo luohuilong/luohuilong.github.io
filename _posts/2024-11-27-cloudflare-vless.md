@@ -2,18 +2,20 @@
 layout: post
 title:  "cloudflare worker 搭建 vless节点"
 date:   2024-11-27 09:07:18 +0800
-categories: 学习摘要
+categories: 互联网
 tags: cloudflare
 author: lhlloveqq
 excerpt: 
 ---
 
 * content
-{:toc}
+  {:toc}
 
 **github文件地址**：[https://github.com/zizifn/edgetunnel/blob/main/src/worker-vless.js][1]
 
- - **搭建流程**
+[worker-vless.js本地下载][2]
+
+**搭建流程**
 
 1、注册一个cloudflare账号；
 
@@ -44,13 +46,15 @@ let userID = ‘86797703-523c-4325-8fd8-ea3fc228038f’;
 13、将第9行的“let proxyIP = ”修改为下面cdn加速中的任意一个，例如：
 let proxyIP = ‘cdn.anycast.eu.org’;
 
- - cdn加速
+cdn加速
 
-    cdn-all.xn--b6gac.eu.org
-    cdn.xn--b6gac.eu.org
-    cdn-b100.xn--b6gac.eu.org
-    edgetunnel.anycast.eu.org
-    cdn.anycast.eu.org （亚洲地区）
+```
+cdn-all.xn--b6gac.eu.org
+cdn.xn--b6gac.eu.org
+cdn-b100.xn--b6gac.eu.org
+edgetunnel.anycast.eu.org
+cdn.anycast.eu.org （亚洲地区）
+```
 
 14、点击右上角的“保存并部署”；
 如果点击编辑栏右上角的“workers.dev”，在新页面打开看到的是“{”开头，“}”结尾的json内容，则说明部署已经生效了，否则就会是网页报错的页面！
@@ -66,3 +70,5 @@ let proxyIP = ‘cdn.anycast.eu.org’;
 19、复制该VLESS链接，就可以添加VLESS服务器到V2ray的终端；
 
   [1]: https://github.com/zizifn/edgetunnel/blob/main/src/worker-vless.js
+  
+  [2]: https://www.dzpk.pub/images/worker-vless.js

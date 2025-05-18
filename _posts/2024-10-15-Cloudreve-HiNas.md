@@ -2,7 +2,7 @@
 layout: post
 title:  "Cloudreve3.5.3 armv7版本 适用hi3798mv100"
 date:   2024-10-15 15:07:18 +0800
-categories: 学习摘要
+categories: 互联网
 tags: HiNas
 author: lhlloveqq
 excerpt: 
@@ -26,35 +26,22 @@ excerpt:
 文件内容
 
     [Unit]
-    
     Description=Cloudreve
-    
     Documentation=https://docs.cloudreve.org
-    
     After=network.target
-    
     After=mysqld.service
-    
     Wants=network.target
     
     [Service]
-    
     WorkingDirectory=/root/cloudreve3.5.3
-    
     ExecStart=/root/cloudreve3.5.3/cloudreve
-    
     Restart=on-abnormal
-    
     RestartSec=5s
-    
     KillMode=mixed
-    
     StandardOutput=null
-    
     StandardError=syslog
     
     [Install]
-    
     WantedBy=multi-user.target
 
 保存退出 [Esc] :wq

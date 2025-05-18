@@ -2,7 +2,7 @@
 layout: post
 title:  "ARM设备上的轻量化NAS-Kiftd"
 date:   2024-10-15 15:07:18 +0800
-categories: 学习摘要
+categories: 互联网
 tags: HiNas
 author: lhlloveqq
 excerpt: 
@@ -11,7 +11,7 @@ excerpt:
  * content
 {:toc}
 
-前言
+**前言**
 
 本文最初是因为看到了这篇帖子： https://www.right.com.cn/forum/thread-8260837-1-1.html
 
@@ -21,25 +21,35 @@ excerpt:
 
 缺点：非直接存储，无法离线下载。
 
-部署
+**部署**
 
-安装 java
+* 安装 java
 
 创建 java 文件夹
+
+```
 sudo mkdir /opt/java-8
 cd /opt/java-8
+```
 
-下载 java8
-wget https://repo.huaweicloud.com/java/jdk/8u181-b13/jdk-8u181-linux-arm32-vfp-hflt.tar.gz
+* 下载 java8
 
-解压
+`wget https://repo.huaweicloud.com/java/jdk/8u181-b13/jdk-8u181-linux-arm32-vfp-hflt.tar.gz`
+
+* 解压
+
+```
 tar -zxvf jdk-8u181-linux-arm32-vfp-hflt.tar.gz
 rm jdk-8u181-linux-arm32-vfp-hflt.tar.gz
+```
 
-配置系统变量
-sudo vim /etc/profile
+* 配置系统变量
+
+`sudo vim /etc/profile`
+
 按 i 进入插入模式，在末尾输入
 
+```
     #set java environment 
     #安装目录 
     export JAVA_HOME=/opt/java-8/jdk1.8.0_181 
@@ -47,26 +57,36 @@ sudo vim /etc/profile
     export   CLASSPATH=.:$JAVA_HOME/lib:$JRE_HOME/lib:$CLASSPATH 
     export  PATH=$JAVA_HOME/bin:$JRE_HOME/bin:$PATH 
     export   JRE_HOME=$JAVA_HOME/jre
+```
 
 按 ESC 然后输入:wq
 
-source /etc/profile
+`source /etc/profile`
 
-校验 java 版本
-java -version
+* 校验 java 版本
 
-安装 Kiftd
+`java -version`
 
-下载
+**安装 Kiftd**
 
+* 下载
+
+```
 cd /home/
 git clone  https://github.com/KOHGYLW/kiftd.git
-启动
+```
 
+* 启动
+
+```
 cd ./kiftd/
 java -jar kiftd-1.1.0-RELEASE.jar -console
 -start
-访问
+```
+
+程序名字自己换对应的，版本不一样名字不一样。
+
+* 访问
 
 等到服务启动完成即可访问。
 
@@ -78,13 +98,15 @@ java -jar kiftd-1.1.0-RELEASE.jar -console
 
 输入默认的管理员账户为admin，密码是000000：
 
-至此所有操作完成，更多信息请看：https://kohgylw.gitee.io/
+至此所有操作完成，更多信息请看：`https://kohgylw.gitee.io/`
 
 设置开机启动
-sudo nano kiftd.service
+
+`sudo nano kiftd.service`
 
 内容
 
+```
     [Unit]
     
     [Service]
@@ -93,17 +115,21 @@ sudo nano kiftd.service
     [Install]
     WantedBy=default.target
     ExecStart={您的Java安装路径}/bin/java -jar {kiftd主程序的完整路径} -start
+```
 
+```
 sudo systemctl daemon-reload
 sudo systemctl enable kiftd.service
+```
 
 使用下面的命令进行管理
-启动 kiftd
-sudo systemctl start kiftd.service
-重启 kiftd
-sudo systemctl restart kiftd.service
-查看 kiftd 运行状态
-sudo systemctl status kiftd.service
 
-或者使用原声后台运行关闭中断不影响
-nohup java -jar kiftd-xxx-xxx.jar -start & echo $!
+启动 kiftd
+`sudo systemctl start kiftd.service`
+重启 kiftd
+`sudo systemctl restart kiftd.service`
+查看 kiftd 运行状态
+`sudo systemctl status kiftd.service`
+
+或者使用原生后台运行关闭中断不影响
+`nohup java -jar kiftd-xxx-xxx.jar -start & echo $!`

@@ -2,8 +2,8 @@
 layout: post
 title:  "htaccess使用方法总结"
 date:   2017-05-08 08:07:18 +0800
-categories: 学习摘要
-tags: Apache .heaccess
+categories: 互联网
+tags: Apache
 author: lhlloveqq
 excerpt: 简单介绍.htaccess的使用方法，对于初学很有帮助，包括我自己,嘿嘿..!
 ---
@@ -33,34 +33,38 @@ AccessFileName .config
 
 你所知道的任何页面错误代码（像404找不到页面），都可以通过在.htaccess文件里加入下面的文字将其变成自定义页面：
 
-ErrorDocument errornumber /file.html
+    ErrorDocument errornumber /file.html
 
 举例来说，如果我的根目录下有一个notfound.html文件，我想使用它作为404 error的页面：
 
-ErrorDocument 404 /notfound.html
+    ErrorDocument 404 /notfound.html
 
 如果文件不在网站的根目录下，你只需要把路径设置为：
 
-ErrorDocument 500 /errorpages/500.html
+    ErrorDocument 500 /errorpages/500.html
 
 以下是一些最常用的错误：
 
+```
 401 – Authorization Required 需要验证
 400 – Bad request 错误请求
 403 – Forbidden 禁止
 500 – Internal Server Error 内部服务器错误
 404 – Wrong page 找不到页面
+```
 
 接下来，你要做的只是创建一个错误发生时显示的文件，然后把它们和.htaccess一起上传。
 
 ●.htaccess命令
+
 ▼禁止显示目录列表
+
 有些时候，由于某种原因，你的目录里没有index文件，这意味着当有人在浏览器地址栏键入了该目录的路径，该目录下所有的文件都会显示出来，这会给你的网站留下安全隐患。
 为避免这种情况（而不必创建一堆的新index文件），你可以在你的.htaccess文档中键入以下命令，用以阻止
 
 目录列表的显示：
 
-Options -Indexes
+    Options -Indexes
 
 ▼阻止/允许特定的IP地址
 
@@ -68,55 +72,63 @@ Options -Indexes
 
 你可以使用以下命令封禁一个IP地址：
 
-deny from 000.000.000.000
+    deny from 000.000.000.000
 
 这里的000.000.000.000是被封禁的IP地址，如果你只指明了其中的几个，则可以封禁整个网段的地址。如你输入210.10.56.，则将封禁210.10.56.0～210.10.56.255的所有IP地址。
 
 你可以使用以下命令允许一个IP地址访问网站：
 
-allow from 000.000.000.000
+    allow from 000.000.000.000
 
 被允许的IP地址则为000.000.000.000，你可以象封禁IP地址一样允许整个网段。
 
 如果你想阻止所有人访问该目录，则可以使用：
 
-deny from all
+    deny from all
 
 不过这并不影响脚本程序使用这个目录下的文档。
 
 ▼替换index文件
 
-也许你不想一直使用index.htm或index.html作为目录的索引文件。举例来说，如果你的站点使用PHP文件，你可能会想使用 index.php来作为该目录的索引文档。当然也不必局限于“index”文档，如果你愿意，使用.htaccess你甚至能够设置 foofoo.balh来作为你的索引文档！
+也许你不想一直使用index.htm或index.html作为目录的索引文件，举例来说，如果你的站点使用PHP文件，你可能会想使用 index.php来作为该目录的索引文档。
 
-这些互为替换的索引文件可以排成一个列表，服务器会从左至右进行寻找，检查哪个文档在真实的目录中存在。如果一个也找不到，它将会把目录列表显示出来（除非你已经关闭了显示目录文件列表）。
+当然也不必局限于“index”文档，如果你愿意，使用.htaccess你甚至能够设置 foofoo.balh来作为你的索引文档！
 
-DirectoryIndex index.php index.php3 messagebrd.pl index.html index.htm
+这些互为替换的索引文件可以排成一个列表，服务器会从左至右进行寻找，检查哪个文档在真实的目录中存在。
+
+如果一个也找不到，它将会把目录列表显示出来（除非你已经关闭了显示目录文件列表）。
+
+    DirectoryIndex index.php index.php3 messagebrd.pl index.html index.htm
 
 ▼重定向(rewrite)
 
-.htaccess 最有用的功能之一就是将请求重定向到同站内或站外的不同文档。这在你改变了一个文件名称，但仍然想让用户用旧地址访问到它时，变的极为有用。另一个应用（我发现的很有用的）是重定向到一个长URL，例如在我的时事通讯中，我可以使用一个很简短的URL来指向我的会员链接。以下是一个重定向文件的例子：
+.htaccess 
 
-Redirect /location/from/root/file.ext http://minidx.com/new/file/location.xyz
+最有用的功能之一就是将请求重定向到同站内或站外的不同文档。这在你改变了一个文件名称，但仍然想让用户用旧地址访问到它时，变的极为有用。
+
+另一个应用（我发现的很有用的）是重定向到一个长URL，例如在我的时事通讯中，我可以使用一个很简短的URL来指向我的会员链接。以下是一个重定向文件的例子：
+
+    Redirect /location/from/root/file.ext http://minidx.com/new/file/location.xyz
 
 上述例子中，访问在root目录下的名为oldfile.html可以键入：
 
-/oldfile.html
+    /oldfile.html
 
 访问一个旧次级目录中的文件可以键入：
 
-/old/oldfile.html
+    /old/oldfile.html
 
 你也可以使用.htaccess重定向整个网站的目录。假如你的网站上有一个名为olddirectory的目录，并且你已经在一个新网站http: //minidx.com/newdirectory/上建立了与上相同的文档，你可以将旧目录下所有的文件做一次重定向而不必一一声明：
 
-Redirect /olddirectory http://minidx.com/newdirectory
+    Redirect /olddirectory http://minidx.com/newdirectory
 
 这样，任何指向到站点中/olddirectory目录的请求都将被重新指向新的站点，包括附加的额外URL信息。例如有人键入：
 
-http: //minidx.com/olddirecotry/oldfiles/images/image.gif
+    http: //minidx.com/olddirecotry/oldfiles/images/image.gif
 
 请求将被重定向到：
 
-http: //minidx.com/newdirectory/oldfiles/images/image.gif
+    http: //minidx.com/newdirectory/oldfiles/images/image.gif
 
 如果正确使用，此功能将极其强大。
 
@@ -128,23 +140,33 @@ http: //minidx.com/newdirectory/oldfiles/images/image.gif
 
 利用.htaccess将一个目录加上密码保护分两个步骤。第一步是在你的.htaccess文档里加上适当的几行代码，再将.htaccess文档放进你要保护的目录下：
 
+````
 AuthName “Section Name”
 AuthType Basic
 AuthUserFile /full/path/to/.htpasswd
 Require valid-user
+````
 
 你可能需要根据你的网站情况修改一下上述内容中的一些部分，如用被保护部分的名字”Members Area”，替换掉“Section Name”。
 
-/full/parth/to/.htpasswd则应该替换为指向.htpasswd文件（后面详述该文档）的完整服务器路径。
+`/full/parth/to/.htpasswd`则应该替换为指向.htpasswd文件（后面详述该文档）的完整服务器路径。
 
-目录的密码保护比.htaccess的其他功能要麻烦些，因为你必须同时创建一个包含用户名和密码的文档，用于访问你的网站，相关信息（默认）位于一个名为.htpasswd的文档里。像.htaccess一样，.htpasswd也是一个没有文件名且具有8位扩展名的文档，可以放置在你网站里的任何地方（此时密码应加密），但建议你将其保存在网站Web根目录外，这样通过网络就无法访问到它了。
+目录的密码保护比.htaccess的其他功能要麻烦些，因为你必须同时创建一个包含用户名和密码的文档，用于访问你的网站，相关信息（默认）位于一个名为.htpasswd的文档里。
+
+像.htaccess一样，.htpasswd也是一个没有文件名且具有8位扩展名的文档，可以放置在你网站里的任何地方（此时密码应加密），但建议你将其保存在网站Web根目录外，这样通过网络就无法访问到它了。
 
 创建好.htpasswd文档后（可以通过文字编辑器创建），下一步是输入用于访问网站的用户名和密码，应为：
 
-username:password
+    username:password
 
-“password” 的位置应该是加密过的密码。你可以通过几种方法来得到加密过的密码：一是使用一个网上提供的permade脚本或自己写一个；另一个很不错的 username/password加密服务是通过KxS网站，这里允许你输入用户名及密码，然后生成正确格式的密码。对于多用户，你只需要在.htpasswd文档中新增同样格式的一行即可。另外还有一些免费的脚本程序可以方便地管理.htpasswd文档，可以自动新增/移除用户等。
+“password” 的位置应该是加密过的密码。你可以通过几种方法来得到加密过的密码：一是使用一个网上提供的permade脚本或自己写一个；
 
-当你试图访问被.htaccess密码保护的目录时，你的浏览器会弹出标准的username/password对话窗口。如果你不喜欢这种方式，有些脚本程序可以允许你在页面内嵌入username/password输入框来进行认证，你也可以在浏览器的URL框内以以下方式输入用户名和密码（未加密的):http://username:password@www.website.com/directory/
+另一个很不错的username/password加密服务是通过KxS网站，这里允许你输入用户名及密码，然后生成正确格式的密码。
+
+对于多用户，你只需要在.htpasswd文档中新增同样格式的一行即可。另外还有一些免费的脚本程序可以方便地管理.htpasswd文档，可以自动新增/移除用户等。
+
+当你试图访问被.htaccess密码保护的目录时，你的浏览器会弹出标准的username/password对话窗口。
+
+如果你不喜欢这种方式，有些脚本程序可以允许你在页面内嵌入username/password输入框来进行认证，你也可以在浏览器的URL框内以以下方式输入用户名和密码（未加密的):`http://username:password@www.website.com/directory/`
 
 比较常用的基本上就是这些了，如果想更加具体的了解.htaccess的使用，那可以参照Appache的doc中相关的文档。
