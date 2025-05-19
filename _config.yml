@@ -7,7 +7,7 @@
 
 # Site settings
 title: 云帆笔记
-brief-intro: #命里有时终须有，命里无时莫强求
+brief-intro: 长风破浪时，一字一锚点
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://luohuilong.github.io/" # the base hostname & protocol for your site
 
