@@ -5,7 +5,7 @@ date:   2024-11-27 14:56:18 +0800
 categories: 互联网
 tags: ubuntu
 author: lhlloveqq
-excerpt: 
+excerpt: 今天在海纳斯安装CloudFlare Tunnel的时候，提示错误，一度怀疑人生，网上的教程都是docker安装，我这个hinas就想安静的做个WEB服务器，并不想安装docker，所以下载了原生程序，我明明已经选择了Debian/arm32安装包。安装为什么还会报错呢。况且，arm是32位，armhf不也是32位嘛，这话的意思是说deb包的架构是arm的，系统的架构是armhf的，不适配。
 ---
 
 * content

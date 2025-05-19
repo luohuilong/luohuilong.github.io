@@ -5,7 +5,7 @@ date:   2024-10-15 15:07:18 +0800
 categories: 互联网
 tags: hinas
 author: lhlloveqq
-excerpt: 
+excerpt: 本文最初是因为看到了这篇帖子： https://www.right.com.cn/forum/thread-8260837-1-1.html，但是发现那个镜像在window上可以正常运行，但是在盒子上无法访问的情况，因此决定记录直接部署kiftd到ARM设备上的操作方法
 ---
 
  * content

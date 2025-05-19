@@ -5,7 +5,7 @@ date:   2024-10-15 15:07:18 +0800
 categories: 互联网
 tags: hinas
 author: lhlloveqq
-excerpt: 
+excerpt: Linux下有很多历史累积的日志，时间长了占用空间比较多，清理方法可以采用按照日期清理，或者按照允许保留的容量清理，只保存2天的日志或最大500M
 ---
 
  * content

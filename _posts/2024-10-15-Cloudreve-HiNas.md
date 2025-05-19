@@ -5,7 +5,7 @@ date:   2024-10-15 15:07:18 +0800
 categories: 互联网
 tags: hinas
 author: lhlloveqq
-excerpt: 
+excerpt: 部署cloudreve到hinas上的操作方法
 ---
 
  * content
