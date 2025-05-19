@@ -15,32 +15,32 @@
   var demoContent = [
     {
       demo_link: 'https://www.xiunobbs.cn/',
-      img_link: 'https://www.dzpk.pub/images/xiunobbs.png',
+      img_link: '../images/xiunobbs.png',
       code_link: 'http://git.oschina.net/xiuno/xiunobbs',
       title: 'Xiuno BBS',
       core_tech: 'PHP',
       description: 'Xiuno BBS 4.0 是 2016 年诞生的，国产、小巧、精悍、采用PHP开发的论坛程序'
     },{
       demo_link: 'https://cn.wordpress.org/',
-      img_link: 'https://www.dzpk.pub/images/wordpress.jpg',
+      img_link: '../images/wordpress.jpg',
       title: 'WordPress',
       core_tech: 'PHP',
       description: 'WordPress是一个注重美学、易用性和网络标准的个人信息发布平台，WordPress虽为免费的开源软件。'
     },{
       demo_link: 'http://jekyll.com.cn/',
-      img_link: 'https://www.dzpk.pub/images/jekyll.png',
+      img_link: '../images/jekyll.png',
       title: 'Jekyll',
       core_tech: 'Ruby',
       description: '将纯文本转化为静态网站和博客，无需数据库、评论功能，不需要不断的更新版本——只用关心你的博客内容。'
     },{
       demo_link: 'https://cloudreve.org/',
-      img_link: 'https://www.dzpk.pub/images/logo192.png',
+      img_link: '../images/logo192.png',
       title: 'Cloudreve',
       core_tech: 'GO',
       description: '在 Web 端，Cloudreve 提供了强大的文件管理及上传组件，通过拖拽管理文件；多选、范围选择批量操作文件，对文件进行分享、移动、复制、压缩等操作。'
     },{
       demo_link: 'https://kohgylw.github.io/',
-      img_link: 'https://www.dzpk.pub/images/kiftd.png',
+      img_link: '../images/kiftd.png',
       title: 'Kiftd',
       core_tech: 'Java',
       description: '一款面向个人、团队、小型组织的网盘应用系统，免费、开源、完善、操作简单。'
