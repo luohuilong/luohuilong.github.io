@@ -7,7 +7,7 @@
 
 # Site settings
 title: 云帆笔记
-brief-intro: #行路有痕，落笔成帆
+brief-intro: 遗忘是默认设置，而我在手动存档
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://luohuilong.github.io/" # the base hostname & protocol for your site
 
