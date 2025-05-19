@@ -7,9 +7,9 @@
 
 # Site settings
 title: 云帆博客
-brief-intro: #命里有时终须有，命里无时莫强求
+brief-intro: 遗忘是默认设置，而我在手动存档
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://luohuilong-github-io.pages.dev/" # the base hostname & protocol for your site
+url: "https://bolg.wait.loan/" # the base hostname & protocol for your site
 
 permalink: /:year/:month/:day/:title/
 
