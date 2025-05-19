@@ -11,9 +11,9 @@ excerpt:
 * content
   {:toc}
 
-**github文件地址**：[https://github.com/zizifn/edgetunnel/blob/main/src/worker-vless.js][1]
+**github文件地址：**[https://github.com/zizifn/edgetunnel/blob/main/src/worker-vless.js][1]
 
-[worker-vless.js本地下载][2]
+[worker-vless.js][2]
 
 **搭建流程**
 
