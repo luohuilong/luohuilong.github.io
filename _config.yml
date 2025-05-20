@@ -8,7 +8,6 @@
 # Site settings
 title: 云帆博客
 brief-intro: 遗忘是默认设置，而我在手动存档
-avatar: ../images/logo.png
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.dzpk.pub" # the base hostname & protocol for your site
 permalink: /:year/:month/:day/:title/
