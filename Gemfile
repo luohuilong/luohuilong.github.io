@@ -1,3 +1,4 @@
 source "https://rubygems.org"
 gem "jekyll", "3.9.3"
-gem "webrick"  # Jekyll 3.x 需要手动添加 webrick
+gem "webrick"
+gem "ffi", "1.15.5"  # 显式锁定旧版本
