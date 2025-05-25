@@ -1,6 +1,12 @@
-gem "public_suffix", ">= 5.1.1", "< 7.0"  # 允许 5.x 或 6.x
 # 添加全局源（必须）
 source "https://rubygems.org"
+# 指定 Ruby 版本
+ruby "~> 3.1.0"  # 改用较旧的 3.1.x
+
+# 严格锁定冲突的 gems
+gem "public_suffix", "5.1.1"
+gem "addressable", "~> 2.8"  # public_suffix 的依赖项
+
 
 # 添加 jekyll-paginate 插件（关键缺失）
 gem "jekyll-paginate"
