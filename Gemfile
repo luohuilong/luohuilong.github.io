@@ -1,7 +1,5 @@
 # 添加全局源（必须）
 source "https://rubygems.org"
-# 指定 Ruby 版本
-ruby "~> 3.1.0"  # 改用较旧的 3.1.x
 
 # 严格锁定冲突的 gems
 gem "public_suffix", "5.1.1"
