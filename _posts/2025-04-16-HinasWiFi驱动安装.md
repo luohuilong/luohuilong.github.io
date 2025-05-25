@@ -53,4 +53,4 @@ nmcli connection up "wifi名字"
 **附件下载**：[wifi-hg680j.7z][1]
 
 
-  [1]: https://blog.dut.pub/usr/uploads/2024/12/2266787446.7z
+  [1]: https://r2.wait.loan/uploads/attach/wifi-hg680j.7z

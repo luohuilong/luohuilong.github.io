@@ -72,4 +72,4 @@ cdn.anycast.eu.org （亚洲地区）
 
   [1]: https://github.com/zizifn/edgetunnel/blob/main/src/worker-vless.js
   
-  [2]: https://www.dzpk.pub/images/worker-vless.js
+  [2]: https://r2.wait.loan/uploads/attach/worker-vless.js

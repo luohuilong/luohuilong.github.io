@@ -110,17 +110,17 @@ excerpt: 最近一直在探索各种图床方案，本文想讲的Cloudflare Pag
 项目地址：[https://github.com/MarSeventh/CloudFlare-ImgBed][14]
 
 
-  [1]: https://img.dut.pub/file/img-hub/1747954689326_image-20250318160256603.png
-  [2]: https://img.dut.pub/file/img-hub/1747954690568_image-20250318163032310.webp
-  [3]: https://img.dut.pub/file/img-hub/1747960058289_image-20250318160715963.webp
-  [4]: https://img.dut.pub/file/img-hub/1747954694565_image-20250318160947328.png
-  [5]: https://img.dut.pub/file/img-hub/1747954695090_image-20250318161301692.png
-  [6]: https://img.dut.pub/file/img-hub/1747955391914_image-20250318162328437.jpg
-  [7]: https://img.dut.pub/file/img-hub/1747954690790_image-20250318162806111.webp
-  [8]: https://img.dut.pub/file/img-hub/1747955387107_image-20250318163301576.jpg
-  [9]: https://img.dut.pub/file/img-hub/1747955389450_image-20250318163451868.jpg
-  [10]: https://img.dut.pub/file/img-hub/1747955392031_image-20250318164221375.jpg
-  [11]: https://img.dut.pub/file/img-hub/1747955390107_image-20250318165147887.jpg
-  [12]: https://img.dut.pub/file/img-hub/1747955396677_image-20250318165136074.jpg
-  [13]: https://img.dut.pub/file/img-hub/1747955393079_image-20250318165024849.jpg
+  [1]: https://f80386d.webp.li/file/img-hub/1747954689326_image-20250318160256603.png
+  [2]: https://f80386d.webp.li/file/img-hub/1747954690568_image-20250318163032310.webp
+  [3]: https://f80386d.webp.li/file/img-hub/1747960058289_image-20250318160715963.webp
+  [4]: https://f80386d.webp.li/file/img-hub/1747954694565_image-20250318160947328.png
+  [5]: https://f80386d.webp.li/file/img-hub/1747954695090_image-20250318161301692.png
+  [6]: https://f80386d.webp.li/file/img-hub/1747955391914_image-20250318162328437.jpg
+  [7]: https://f80386d.webp.li/file/img-hub/1747954690790_image-20250318162806111.webp
+  [8]: https://f80386d.webp.li/file/img-hub/1747955387107_image-20250318163301576.jpg
+  [9]: https://f80386d.webp.li/file/img-hub/1747955389450_image-20250318163451868.jpg
+  [10]: https://f80386d.webp.li/file/img-hub/1747955392031_image-20250318164221375.jpg
+  [11]: https://f80386d.webp.li/file/img-hub/1747955390107_image-20250318165147887.jpg
+  [12]: https://f80386d.webp.li/file/img-hub/1747955396677_image-20250318165136074.jpg
+  [13]: https://f80386d.webp.li/file/img-hub/1747955393079_image-20250318165024849.jpg
   [14]: https://github.com/MarSeventh/CloudFlare-ImgBed
