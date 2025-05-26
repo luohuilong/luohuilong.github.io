@@ -9,7 +9,7 @@ excerpt: 利用cloudflare pages 链接github的jekyll地址，构建全球部署
 ---
 
 * content
-  {:toc}
+{:toc}
 
 ### 创建
 
