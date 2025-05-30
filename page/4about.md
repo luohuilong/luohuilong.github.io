@@ -19,4 +19,4 @@ type: page
 “你上次的更新……是去年吧？” ——我妹（唯一忠实读者）
 
 5. #### 联系我 ####
-如果找不到我，可能正在和拖延症打架。但欢迎留言 [smile_lhl@foxmail.com](mailto:smile_lhl@foxmail.com) 我会用“意念回复”功能（偶尔也会打字）。
+如果找不到我，可能正在和拖延症打架。但欢迎留言 [LuoHuiLong@wait.loan](mailto:luohuilong@wait.loan) 我会用“意念回复”功能（偶尔也会打字）。
