@@ -1,1 +1,1 @@
-### [dzpk.pub](https://www.dzpk.pub)
+### [blog.fork.pub](https:/blog.fork.pub)
