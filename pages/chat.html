@@ -3,4 +3,28 @@ layout: mypost
 title: 留言板
 ---
 
-{% include comments.html %}
+<script>
+blog.addLoadEvent(function() {
+  // 确保 blog.darkMode 已初始化
+  const theme = blog.darkMode ? 'dark' : 'light';
+  
+  const container = document.getElementById('giscus-container');
+  const script = document.createElement('script');
+  script.src = 'https://giscus.app/client.js';
+  script.setAttribute('data-repo', 'luohuilong/giscus');
+  script.setAttribute('data-repo-id', 'R_kgDOOxE7TA');
+  script.setAttribute('data-category', 'Announcements');
+  script.setAttribute('data-category-id', 'DIC_kwDOOxE7TM4Cqnxv');
+  script.setAttribute('data-mapping', 'pathname');
+  script.setAttribute('data-strict', '1');
+  script.setAttribute('data-reactions-enabled', '0');
+  script.setAttribute('data-emit-metadata', '0');
+  script.setAttribute('data-input-position', 'top');
+  script.setAttribute('data-theme', theme);
+  script.setAttribute('data-lang', 'zh-CN');
+  script.crossOrigin = 'anonymous';
+  script.async = true;
+  
+  container.appendChild(script);
+});
+</script>
