@@ -434,8 +434,28 @@ blog.addLoadEvent(function () {
     }, 600)
 
     blog.initDarkMode(flag)
+    // 更新 Giscus 主题
+    updateGiscusTheme(flag === 'true');
   }
 
+  // 更新 Giscus 主题的函数
+  function updateGiscusTheme(isDark) {
+    const theme = isDark ? 'dark' : 'light';
+    const iframe = document.querySelector('iframe.giscus-frame');
+    if (iframe) {
+      iframe.contentWindow.postMessage(
+        {
+          giscus: {
+            setConfig: {
+              theme: theme,
+            },
+          },
+        },
+        'https://giscus.app'
+      );
+    }
+  }
+  
   blog.addEvent($el, 'click', function () {
     const flag = blog.darkMode ? 'false' : 'true'
     localStorage.darkMode = flag
@@ -451,6 +471,8 @@ blog.addLoadEvent(function () {
       }
     })
   }
+    // 初始化 Giscus 主题
+  updateGiscusTheme(blog.darkMode);
 })
 
 // 标题定位
