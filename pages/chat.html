@@ -7,20 +7,23 @@ title: 留言板
 
 <script>
 blog.addLoadEvent(function() {
-  // 安全检测主题状态
-  const isDark = (window.blog && typeof blog.darkMode !== 'undefined')
-    ? blog.darkMode
-    : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  // 确保 blog.js 已加载
+  if (!window.blog) {
+    console.error('blog.js 未加载');
+    return;
+  }
 
-  // 创建容器（防止重复加载）
-  const container = document.getElementById('giscus-root') || document.createElement('div');
-  container.id = 'giscus-root';
-  document.body.appendChild(container);
+  // 使用 blog.darkMode 的当前值
+  const isDark = blog.darkMode;
 
-  // 清除旧实例
-  container.innerHTML = '';
+  const container = document.getElementById('giscus-root');
+  if (!container) return;
 
-  // 创建 script 元素
+  // 防止重复加载
+  if (container.querySelector('script[src*="giscus.app"]')) {
+    return;
+  }
+
   const script = document.createElement('script');
   script.src = 'https://giscus.app/client.js';
   script.dataset.repo = 'luohuilong/giscus';
@@ -39,6 +42,6 @@ blog.addLoadEvent(function() {
 
   container.appendChild(script);
   
-  console.log('[Giscus] 正在加载，主题:', isDark ? 'dark' : 'light');
+  console.log('[Giscus] 加载主题:', isDark ? 'dark' : 'light');
 });
 </script>

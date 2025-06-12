@@ -433,7 +433,10 @@ blog.addLoadEvent(function () {
       document.documentElement.removeAttribute('transition')
     }, 600)
 
-    blog.initDarkMode(flag)
+    blog.initDarkMode(flag) {
+    // 在主题切换按钮事件中调用
+    updateGiscusTheme(flag === 'true'); // 添加这行
+    }
   }
 
   blog.addEvent($el, 'click', function () {
@@ -441,6 +444,7 @@ blog.addLoadEvent(function () {
     localStorage.darkMode = flag
     initDarkMode(flag)
   })
+
 
   if (window.matchMedia) {
     window.matchMedia('(prefers-color-scheme: dark)').addListener(function (ev) {
@@ -452,6 +456,24 @@ blog.addLoadEvent(function () {
     })
   }
 })
+
+// 在文件开头添加 darkMode 默认值
+blog.darkMode = localStorage.darkMode === 'true' || 
+  (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+
+// 将 updateGiscusTheme 移到外层作用域
+function updateGiscusTheme(isDark) {
+  const iframe = document.querySelector('iframe.giscus-frame');
+  if (iframe) {
+    iframe.contentWindow.postMessage({
+      giscus: {
+        setConfig: {
+          theme: isDark ? 'dark' : 'light'
+        }
+      }
+    }, 'https://giscus.app');
+  }
+}
 
 // 标题定位
 blog.addLoadEvent(function () {
