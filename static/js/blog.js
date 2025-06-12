@@ -434,8 +434,7 @@ blog.addLoadEvent(function () {
     }, 600)
 
     blog.initDarkMode(flag)
-        // 更新 Giscus 主题
-    updateGiscusTheme(flag === 'true');
+    updateGiscusTheme(flag === 'true')
   }
 
   blog.addEvent($el, 'click', function () {
@@ -444,11 +443,18 @@ blog.addLoadEvent(function () {
     initDarkMode(flag)
   })
 
- // 更新 Giscus 主题的函数
+  // 增强的 Giscus 主题更新函数
   function updateGiscusTheme(isDark) {
-    const theme = isDark ? 'dark' : 'light';
-    const iframe = document.querySelector('iframe.giscus-frame');
-    if (iframe) {
+    try {
+      const theme = isDark ? 'dark' : 'light';
+      const iframe = document.querySelector('iframe.giscus-frame');
+      
+      if (!iframe) {
+        // 如果iframe不存在，设置一个延迟重试
+        setTimeout(() => updateGiscusTheme(isDark), 500);
+        return;
+      }
+      
       iframe.contentWindow.postMessage(
         {
           giscus: {
@@ -459,22 +465,35 @@ blog.addLoadEvent(function () {
         },
         'https://giscus.app'
       );
+    } catch (error) {
+      console.error('更新Giscus主题失败:', error);
     }
   }
 
   if (window.matchMedia) {
-    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (ev) {
-      const systemDark = ev.target.matches
+    const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    const systemDarkModeHandler = function (ev) {
+      const systemDark = ev.target.matches;
       if (systemDark !== blog.darkMode) {
-        localStorage.darkMode = '' // 清除用户设置
-        initDarkMode(systemDark ? 'true' : 'false')
+        localStorage.darkMode = ''; // 清除用户设置
+        const flag = systemDark ? 'true' : 'false';
+        initDarkMode(flag);
+        updateGiscusTheme(systemDark);
       }
-    })
+    };
+    
+    darkModeMediaQuery.addListener(systemDarkModeHandler);
+    
+    // 初始检查系统偏好
+    if (!localStorage.darkMode && darkModeMediaQuery.matches !== blog.darkMode) {
+      const flag = darkModeMediaQuery.matches ? 'true' : 'false';
+      initDarkMode(flag);
+    }
   }
-    // 初始化 Giscus 主题
+  
+  // 初始化 Giscus 主题
   updateGiscusTheme(blog.darkMode);
 })
-
 // 标题定位
 blog.addLoadEvent(function () {
   if (!document.querySelector('.page-post')) {

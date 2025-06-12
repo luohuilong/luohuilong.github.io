@@ -3,53 +3,28 @@ layout: mypost
 title: 留言板
 ---
 
-<div id="giscus-container"></div>
-
 <script>
-// 安全加载检查
-function initGiscus() {
-  // 等待 blog 对象初始化
-  if (!window.blog) {
-    setTimeout(initGiscus, 100);
-    return;
-  }
-
-  // 检测主题
-  const isDark = (typeof blog.darkMode !== 'undefined') 
-    ? blog.darkMode
-    : window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-  // 创建容器
-  const container = document.getElementById('giscus-container') || 
-                   document.body.appendChild(document.createElement('div'));
-  container.id = 'giscus-container';
-  container.innerHTML = '';
-
-  // 创建脚本
+blog.addLoadEvent(function() {
+  // 确保 blog.darkMode 已初始化
+  const theme = blog.darkMode ? 'dark' : 'light';
+  
+  const container = document.getElementById('giscus-container');
   const script = document.createElement('script');
   script.src = 'https://giscus.app/client.js';
-  script.dataset.repo = 'luohuilong/giscus';
-  script.dataset.repoId = 'R_kgDOOxE7TA';
-  script.dataset.category = 'Announcements';
-  script.dataset.categoryId = 'DIC_kwDOOxE7TM4Cqnxv';
-  script.dataset.mapping = 'pathname';
-  script.dataset.strict = '1';
-  script.dataset.reactionsEnabled = '0';
-  script.dataset.emitMetadata = '0';
-  script.dataset.inputPosition = 'top';
-  script.dataset.theme = isDark ? 'dark' : 'light';
-  script.dataset.lang = 'zh-CN';
+  script.setAttribute('data-repo', 'luohuilong/giscus');
+  script.setAttribute('data-repo-id', 'R_kgDOOxE7TA');
+  script.setAttribute('data-category', 'Announcements');
+  script.setAttribute('data-category-id', 'DIC_kwDOOxE7TM4Cqnxv');
+  script.setAttribute('data-mapping', 'pathname');
+  script.setAttribute('data-strict', '1');
+  script.setAttribute('data-reactions-enabled', '0');
+  script.setAttribute('data-emit-metadata', '0');
+  script.setAttribute('data-input-position', 'top');
+  script.setAttribute('data-theme', theme);
+  script.setAttribute('data-lang', 'zh-CN');
   script.crossOrigin = 'anonymous';
   script.async = true;
-
+  
   container.appendChild(script);
-}
-
-// 两种启动方式
-if (window.blog && blog.addLoadEvent) {
-  blog.addLoadEvent(initGiscus);
-} else {
-  document.addEventListener('DOMContentLoaded', initGiscus);
-  window.addEventListener('load', initGiscus);
-}
+});
 </script>
