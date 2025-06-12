@@ -433,7 +433,7 @@ blog.addLoadEvent(function () {
       document.documentElement.removeAttribute('transition')
     }, 600)
 
-    blog.initDarkMode(flag);
+    blog.initDarkMode(flag)
         // 更新 Giscus 主题
     updateGiscusTheme(flag === 'true');
   }
