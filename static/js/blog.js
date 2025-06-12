@@ -435,7 +435,7 @@ blog.addLoadEvent(function () {
 
     blog.initDarkMode(flag)
         // 更新 Giscus 主题
-    updateGiscusTheme(flag === 'true');
+    updateGiscusTheme(flag === 'true')
   }
 
   blog.addEvent($el, 'click', function () {
@@ -446,19 +446,19 @@ blog.addLoadEvent(function () {
 
  // 更新 Giscus 主题的函数
   function updateGiscusTheme(isDark) {
-    const theme = isDark ? 'dark' : 'light';
-    const iframe = document.querySelector('iframe.giscus-frame');
+    const theme = isDark ? 'dark' : 'light'
+    const iframe = document.querySelector('iframe.giscus-frame')
     if (iframe) {
       iframe.contentWindow.postMessage(
         {
           giscus: {
             setConfig: {
               theme: theme,
-            },
-          },
-        },
+            }
+          }
+        }
         'https://giscus.app'
-      );
+      )
     }
   }
 
