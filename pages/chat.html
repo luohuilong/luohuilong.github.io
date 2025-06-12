@@ -3,18 +3,42 @@ layout: mypost
 title: 留言板
 ---
 
-<script src="https://giscus.app/client.js"
-        data-repo="luohuilong/giscus"
-        data-repo-id="R_kgDOOxE7TA"
-        data-category="Announcements"
-        data-category-id="DIC_kwDOOxE7TM4Cqnxv"
-        data-mapping="pathname"
-        data-strict="1"
-        data-reactions-enabled="0"
-        data-emit-metadata="0"
-        data-input-position="top"
-        data-theme="preferred_color_scheme"
-        data-lang="zh-CN"
-        crossorigin="anonymous"
-        async>
+<div id="giscus-root"></div>
+
+<script>
+blog.addLoadEvent(function() {
+  // 安全检测主题状态
+  const isDark = (window.blog && typeof blog.darkMode !== 'undefined')
+    ? blog.darkMode
+    : window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  // 创建容器（防止重复加载）
+  const container = document.getElementById('giscus-root') || document.createElement('div');
+  container.id = 'giscus-root';
+  document.body.appendChild(container);
+
+  // 清除旧实例
+  container.innerHTML = '';
+
+  // 创建 script 元素
+  const script = document.createElement('script');
+  script.src = 'https://giscus.app/client.js';
+  script.dataset.repo = 'luohuilong/giscus';
+  script.dataset.repoId = 'R_kgDOOxE7TA';
+  script.dataset.category = 'Announcements';
+  script.dataset.categoryId = 'DIC_kwDOOxE7TM4Cqnxv';
+  script.dataset.mapping = 'pathname';
+  script.dataset.strict = '1';
+  script.dataset.reactionsEnabled = '0';
+  script.dataset.emitMetadata = '0';
+  script.dataset.inputPosition = 'top';
+  script.dataset.theme = isDark ? 'dark' : 'light';
+  script.dataset.lang = 'zh-CN';
+  script.crossOrigin = 'anonymous';
+  script.async = true;
+
+  container.appendChild(script);
+  
+  console.log('[Giscus] 正在加载，主题:', isDark ? 'dark' : 'light');
+});
 </script>
