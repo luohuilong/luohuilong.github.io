@@ -256,9 +256,9 @@ header_filter_by_lua_block {
 [配置文件下载][6]
 
 
-  [1]: https://img2.wait.loan/file/img-hub/1749663565860_2906163519.png
-  [2]: https://img2.wait.loan/file/img-hub/1749663565544_4256031367.png
-  [3]: https://img2.wait.loan/file/img-hub/1749664323427_2818833632.png
-  [4]: https://img2.wait.loan/file/img-hub/1749664328775_1784695453.png
+  [1]: https://f80386d.webp.li/file/img-hub/1749663565860_2906163519.png
+  [2]: https://f80386d.webp.li/file/img-hub/1749663565544_4256031367.png
+  [3]: https://f80386d.webp.li/file/img-hub/1749664323427_2818833632.png
+  [4]: https://f80386d.webp.li/file/img-hub/1749664328775_1784695453.png
   [5]: https://r2.wait.loan/uploads/attach/Ncache.7z
   [6]: https://r2.wait.loan/uploads/attach/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.7z
