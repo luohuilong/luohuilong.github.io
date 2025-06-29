@@ -1,0 +1,64 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: 读徒笔记
+brief-intro: 记录折腾的过程，留住时光的痕迹
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://fork.pub" # the base hostname & protocol for your site
+
+permalink: /posts/:year/:month/:day/:title/
+exclude: ['CNAME', 'README.md', 'LICENSE', '_site', 'dist', 'Gemfile', 'Gemfile.lock']
+
+# other links
+twitter_username: 
+facebook_username: 
+github_username: luohuilong
+email: luohuilong@wait.loan
+weibo_username: #altshiftctrl
+zhihu_username: 91-57-86-26-42
+linkedIn_username: 
+dribbble_username: 
+
+description_footer: 遗忘是默认设置，而我在手动存档
+
+# comments
+# two ways to comment, only choose one, and use your own short name
+# 两种评论插件，选一个就好了，使用自己的 short_name
+duoshuo_shortname: #hygblog
+disqus_shortname: #gaohaoyang
+
+# statistic analysis 统计代码
+# 百度统计 id，将统计代码替换为自己的百度统计id，即
+# hm.src = "//hm.baidu.com/hm.js?xxxxxxxxxxxx";
+# xxxxx字符串
+baidu_tongji_id: #6828b2edbf0a6e167747c8f0d7e23174
+google_analytics_id: #UA-72449510-4 # google 分析追踪id
+
+# Build settings
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# port
+# port: 1234
+
+# url
+category_dir: category/
+tag_dir: tag/
+
+# excerpt
+excerpt_separator: <!--more-->
+
+# paginate
+gems: [jekyll-paginate]
+paginate: 10
+
+plugins:
+  - jekyll-paginate
