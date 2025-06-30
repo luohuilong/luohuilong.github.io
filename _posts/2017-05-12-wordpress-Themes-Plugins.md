@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "推荐WordPress简洁主题和实用插件"
-date:   2017-05-12
+date:   2017-05-12 09:07:18 +0800
 categories: 网络日志
 tags: wordpress
 author: LuoHuiLong

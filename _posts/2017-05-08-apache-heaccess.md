@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "htaccess使用方法总结"
-date:   2017-05-08
+date:   2017-05-08 08:07:18 +0800
 categories: 网络日志
 tags: apache htaccess
 author: LuoHuiLong

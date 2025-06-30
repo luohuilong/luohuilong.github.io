@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "通过gzip和nginx来提高网站打开速度"
-date:   2025-06-08
+date:   2025-06-08  09:07:18 +0800
 categories: 网络日志
 tags: nginx
 author: LuoHuiLong

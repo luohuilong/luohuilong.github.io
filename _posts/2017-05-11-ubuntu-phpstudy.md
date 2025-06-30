@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "ubuntu安装phpstudy和一些优化设置"
-date:   2017-05-11
+date:   2017-05-11 05:56:18 +0800
 categories: 网络日志
 tags: phpstudy ubuntu apache php mysql
 author: LuoHuiLong

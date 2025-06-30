@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Ubuntu更换dpkg架构从armhf到arm"
-date:   2024-11-27
+date:   2024-11-27 14:56:18 +0800
 categories: 网络日志 
 tags: ubuntu arm armhf
 author: LuoHuiLong

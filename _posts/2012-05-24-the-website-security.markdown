@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "浅谈前端安全与规范"
-date:   2012-05-24
+date:   2012-05-24 09:07:18 +0800
 category: 网络日志
 tags:
     - security

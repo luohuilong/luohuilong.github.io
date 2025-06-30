@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Jekyll版本升级到4.x
-date:   2023-06-27
+date:   2023-06-27 09:07:18 +0800
 category: 网络日志
 tags:
     - jekyll

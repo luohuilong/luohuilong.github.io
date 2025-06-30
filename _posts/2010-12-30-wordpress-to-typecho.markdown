@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 博客转移到Typecho平台
-date:   2010-12-30
+date:   2010-12-30 09:07:18 +0800
 categories:
     - 网络日志
 tags:

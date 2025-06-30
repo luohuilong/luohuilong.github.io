@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "对这个 jekyll 博客主题的改版和重构"
-date:   2016-03-12
+date:   2016-03-12 11:40:18 +0800
 categories: 网络日志
 tags: jekyll markdown
 author: LuoHuiLong

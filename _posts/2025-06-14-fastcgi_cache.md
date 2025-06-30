@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Typecho的fastcgi_cache缓存插件 "
-date:   2025-06-14
+date:   2025-06-14  09:07:18 +0800
 categories: 网络日志
 tags: nginx fastcgi_cache
 author: LuoHuiLong
