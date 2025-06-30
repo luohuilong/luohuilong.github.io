@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Windows下apache+php搭建过程"
-date:   2016-12-08 08:07:18 +0800
+date:   2016-12-08
 categories: 网络日志
 tags: apache php
 author: LuoHuiLong

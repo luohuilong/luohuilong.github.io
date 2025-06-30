@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "图床方案Cloudflare Pages+R2+KV"
-date:   2025-05-23 09:35:18 +0800
+date:   2025-05-23
 categories: 网络日志
 tags: CloudFlare-ImgBed kv r2 pages
 author: LuoHuiLong

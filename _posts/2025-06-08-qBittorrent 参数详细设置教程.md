@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "qBittorrent 参数详细设置教程"
-date:   2025-06-08 08:07:18 +0800
+date:   2025-06-08
 categories: 网络日志
 tags: qBittorrent
 author: LuoHuiLong

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Apache+WordPress部署SSL "
-date:   2016-10-08 08:07:18 +0800
+date:   2016-10-08
 categories: 网络日志
 tags: wordpress apache
 author: LuoHuiLong

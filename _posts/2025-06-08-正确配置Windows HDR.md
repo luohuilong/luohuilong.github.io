@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "如何正确配置Windows HDR显示"
-date:   2025-06-08 08:07:18 +0800
+date:   2025-06-08
 categories: 网络日志
 tags: HDR windows
 author: LuoHuiLong

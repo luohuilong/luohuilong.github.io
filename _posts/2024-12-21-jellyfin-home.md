@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 基于 Jellyfin 搭建家庭影视平台
-date:   2024-12-21 09:07:18 +0800
+date:   2024-12-21
 category: 网络日志
 tags:
     - jellyfin

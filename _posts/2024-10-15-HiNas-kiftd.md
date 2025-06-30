@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "ARM设备上的轻量化NAS-Kiftd"
-date:   2024-10-15 15:07:18 +0800
+date:   2024-10-15
 categories: 网络日志
 tags: kiftd
 author: LuoHuiLong

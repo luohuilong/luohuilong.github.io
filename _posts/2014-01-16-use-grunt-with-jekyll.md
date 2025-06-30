@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 使用 grunt 管理 jekyll 博客
-date:   2014-01-16 09:07:18 +0800
+date:   2014-01-16
 category: 网络日志
 tags:
     - jekyll

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "WordPress启用memcached缓存"
-date:   2017-02-08 08:07:18 +0800
+date:   2017-02-08
 categories: 网络日志
 tags: wordpress memcached
 author: LuoHuiLong

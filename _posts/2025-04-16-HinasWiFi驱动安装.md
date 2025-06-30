@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "HinasWiFi驱动安装"
-date:   2025-04-16 09:07:18 +0800
+date:   2025-04-16
 categories: 网络日志
 tags: hinas 海纳思 wifi
 author: LuoHuiLong
