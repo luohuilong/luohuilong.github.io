@@ -62,3 +62,9 @@ paginate: 10
 
 plugins:
   - jekyll-paginate
+
+compress_html:
+  clippings:      all
+  comments:       ["<!--", "-->"]
+  endings:        all
+  startings:      [html, head, body]
