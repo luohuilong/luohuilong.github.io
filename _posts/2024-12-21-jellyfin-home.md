@@ -45,9 +45,9 @@ Jellyfin 默认使用 TMDB 作为元数据来源，从实际使用体验上 TMDB
 
 Jellyfin 的很多功能都通过插件驱动，可以看到 TMDB 和 OMDB 均属于其内置插件，我们也可以根据需要加入其他插件，比如字幕获取插件，比如我增加了 [MetaShark](https://github.com/cxfksword/jellyfin-plugin-metashark) 插件，用于从豆瓣获取元数据
 
-![jellyfin plugin]({{site.baseurl}}/hotlink-ok/jellyfin-plugins.png)
+![jellyfin plugin](https://img2.wait.loan/file/img-hub/1751284124947_jellyfin-plugins.png)
 
-![jellyfin metashark]({{site.baseurl}}/hotlink-ok/jellyfin-metashark.png)
+![jellyfin metashark](https://img2.wait.loan/file/img-hub/1751284141266_jellyfin-metashark.png)
 
 ### 影视资源自动化下载
 本地媒体库的创建可以分为几步走：
@@ -66,7 +66,7 @@ Jellyfin 的很多功能都通过插件驱动，可以看到 TMDB 和 OMDB 均�
 4. **Transmission**: 经典下载器，完成实际的 torrent 文件下载，由 Sonarr、Radarr 或 Jackett 触发。
 5. **Jellyseerr**: Overseerr 的分支，为 Jellyfin 媒体服务器提供媒体资源请求管理功能，可以通过它下发媒体请求任务给 Sonarr 与 Radarr，实现全自动的媒体下载与管理。
 
-![这张图解释比较清楚]({{site.baseurl}}/hotlink-ok/media-flow.png)
+![这张图解释比较清楚](https://img2.wait.loan/file/img-hub/1751284169315_media-flow.png)
 
 以上是一组经典且**理想化**的搭配方案，实际使用后的感受是这套软件对中文影视剧的支持还是偏弱一些，所以我个人现在比较常用的方式简化为三部分：
 
@@ -79,13 +79,13 @@ Jellyfin 的很多功能都通过插件驱动，可以看到 TMDB 和 OMDB 均�
 ### 播放器的选择
 Jellyfin 官方提供的播放器（包括 PC 和客户端）是一个浏览器驱动的 web player，本质上是直接使用了 HTML 的 &lt;video&gt; 标签
 
-![video-player]({{site.baseurl}}/hotlink-ok/video-player.png)
+![video-player](https://img2.wait.loan/file/img-hub/1751284186606_video-player.png)
 
 标签对媒体文件的支持度直接限制了 Jellyfin 播放器对媒体文件类型的支持范围，比如对 .mkv 这类不在支持列表的媒体编码或格式文件会提示播放错误
 
-![Interstellar]({{site.baseurl}}/hotlink-ok/interstellar.png)
+![Interstellar](https://img2.wait.loan/file/img-hub/1751284209794_interstellar.png)
 
-![player-error]({{site.baseurl}}/hotlink-ok/player-error.png)
+![player-error](https://img2.wait.loan/file/img-hub/1751284232880_player-error.png)
 
 这就需要对媒体文件进行编码或文件类型转换，转码成支持的文件，以下是 &lt;video&gt; 标签支持的媒体信息列表，从中可以看出对 MP4 容器支持较好：
 
@@ -279,11 +279,11 @@ networks:
 
 Radarr 容器挂载了 MediaCenter/data 目录，源文件（downloads/complete/）和目标文件（media/movies/）在容器内属于同一磁盘卷，这样就能够开启硬链接代替文件复制，可以减少磁盘空间占用
 
-![radarr-hardlink]({{site.baseurl}}/hotlink-ok/radarr-hardlink.png)
+![radarr-hardlink](https://img2.wait.loan/file/img-hub/1751284268561_radarr-hardlink.png)
 
 Radarr 媒体根目录与 Jellyfin 影片目录是同一个，这样就保证了 Radarr 在创建影片目录、下载完影片资源、按规则重命名、建立硬链接后自动完成媒体库的新增，Jellyfin 只需要定时完成元数据刮削即可，Sonarr 同理
 
-![radarr-root]({{site.baseurl}}/hotlink-ok/radarr-root.png)
+![radarr-root](https://img2.wait.loan/file/img-hub/1751284298709_radarr-root.png)
 
 另外，我使用 Macvlan 为 Transmission 设置独立 IP，主要的作用是方便为其配置代理直连规则，由于 NAS 在机场后面，我可不想流量全部用在影片的下载上面。
 
