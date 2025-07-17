@@ -9,7 +9,7 @@
 title: LuoHL's Blog
 brief-intro: 记录折腾的过程，留住时光的痕迹
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://fork.pub" # the base hostname & protocol for your site
+url: "https://blog.fork.pub" # the base hostname & protocol for your site
 
 permalink: /posts/:year/:month/:day/:title/
 exclude: ['CNAME', 'README.md', 'LICENSE', '_site', 'dist', 'Gemfile', 'Gemfile.lock']
