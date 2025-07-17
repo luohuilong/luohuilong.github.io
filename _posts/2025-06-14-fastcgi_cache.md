@@ -139,9 +139,12 @@ BYPASS 表示缓存黑名单
 手动刷新，可以拼合地址规则。
 比如定义 token 为：ABCD1234
 
-比如页面为：https://xxx.xxx.com/read/typecho-fastcgi_cache.html
+比如页面为：
+'https://xxx.xxx.com/read/typecho-fastcgi_cache.html'
 
-则刷新地址是：https://xxx.xxx.com/ABCD1234/_clean_cache/read/typecho-fastcgi_cache.html
+则刷新地址是：
+'https://xxx.xxx.com/ABCD1234/_clean_cache/read/typecho-fastcgi_cache.html'
+
 访问这个地址就会刷新，插件内也是模拟访问这个地址，实现的刷新。
 
 这个地址，在有缓存的时候，访问会返回200刷新成功，在不存在缓存的时候，会返回正常的404未找到页面错误。
