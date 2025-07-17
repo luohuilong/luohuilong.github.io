@@ -24,4 +24,4 @@ type: page
 
 **5. 联系我**
 
-如果找不到我，可能正在和拖延症打架。但欢迎留言 [LuoHuiLong@wait.loan](mailto:luohuilong@wait.loan) 我会用“意念回复”功能（偶尔也会打字）。
+如果找不到我，可能正在和拖延症打架。但欢迎留言 [LuoHuiLong@fork.pub](mailto:luohuilong@fork.pub) 我会用“意念回复”功能（偶尔也会打字）。
